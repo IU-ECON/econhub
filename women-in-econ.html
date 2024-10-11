@@ -5,26 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IU Economics - Women in Economics</title>
     <link rel="stylesheet" href="simple-v1.css">
+    <style>
+        .logo {
+            width: 1cm;
+            height: 1cm;
+            object-fit: contain;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        h1, h2, h3 {
+            color: #990000;
+        }
+        nav a {
+            color: #990000;
+        }
+        nav a.current {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .event, .testimonial {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #990000;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .cta-button:hover {
+            background-color: #760000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <img src="logo.jpg" alt="IU Economics Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="awards.html">Awards</a>
             <a href="women-in-econ.html" class="current">Women in Econ</a>
             <a href="econ-club.html">Econ Club</a>
+            <a href="gallery.html">Gallery</a>
         </nav>
     </header>
     
     <main>
         <h1>Women in Economics</h1>
-        <p>Women in Economics aims to create an empowering community. The organization serves as a platform for academic, professional, and personal development. Members build networks, establish support groups, foster friendships, and enrich their educational experiences.</p>
         
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:womeninecon@iu.edu">womeninecon@iu.edu</a></p>
-        <p>Phone: (812) 555-1234</p>
+        <h2>Our Mission</h2>
+        <p>Women in Economics at Indiana University is dedicated to empowering and supporting women in the field of economics. We aim to create an inclusive community that fosters academic excellence, professional development, and personal growth for women at all stages of their economic careers.</p>
         
-        <h2>Upcoming Meetings</h2>
+        <h2>What We Offer</h2>
+        <ul>
+            <li>Mentorship programs pairing undergraduates with graduate students and faculty</li>
+            <li>Professional development workshops on topics such as research skills, public speaking, and career planning</li>
+            <li>Networking events with alumnae and industry professionals</li>
+            <li>Research presentation opportunities for undergraduate and graduate students</li>
+            <li>Support for conference attendance and academic pursuits</li>
+            <li>Social events to build community and foster friendships</li>
+        </ul>
+        
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Annual Women in Economics Symposium</h3>
+            <p><strong>Date:</strong> November 30, 2024</p>
+            <p><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+            <p><strong>Location:</strong> IU Auditorium</p>
+            <p>Join us for a day of inspiring talks, panel discussions, and networking opportunities with leading women economists from academia and industry. This year's theme is "Shaping Economic Policy for an Inclusive Future."</p>
+            <p><strong>Keynote Speaker:</strong> Dr. Esther Duflo, Nobel Laureate in Economics</p>
+            <a href="#" class="cta-button">Register Now</a>
+        </div>
+        
+        <h3>Upcoming Meetings</h3>
         <table>
             <tr>
                 <th>Date</th>
@@ -32,26 +111,47 @@
                 <th>Topic</th>
             </tr>
             <tr>
-                <td>2023-10-05</td>
-                <td>15:00</td>
-                <td>Career Paths in Economics</td>
+                <td>October 5, 2024</td>
+                <td>3:00 PM</td>
+                <td>Career Paths in Economic Consulting</td>
             </tr>
             <tr>
-                <td>2023-10-19</td>
-                <td>15:00</td>
-                <td>Research Opportunities</td>
+                <td>October 19, 2024</td>
+                <td>3:00 PM</td>
+                <td>Research Opportunities and Grant Writing Workshop</td>
+            </tr>
+            <tr>
+                <td>November 2, 2024</td>
+                <td>3:00 PM</td>
+                <td>Panel: Women in Central Banking</td>
             </tr>
         </table>
         
-        <div class="event">
-            <h2>Upcoming Event</h2>
-            <h3>Annual Women in Economics Symposium</h3>
-            <p>Date: November 30, 2023</p>
-            <p>Time: 10:00 AM - 4:00 PM</p>
-            <p>Location: IU Auditorium</p>
-            <p>Join us for a day of inspiring talks, panel discussions, and networking opportunities with leading women economists from academia and industry.</p>
-            <a href="#" class="button">Register Now</a>
+        <h2>Success Stories</h2>
+        <div class="testimonial">
+            <p>"Being part of Women in Economics at IU has been transformative for my academic journey. The mentorship I received helped me secure a research assistant position and ultimately influenced my decision to pursue a Ph.D. in Economics."</p>
+            <p><strong>- Sarah Johnson, Class of 2023</strong></p>
         </div>
+        
+        <h2>Get Involved</h2>
+        <p>We welcome all students, faculty, and staff who support our mission, regardless of gender identity. Here's how you can join us:</p>
+        <ul>
+            <li>Attend our bi-weekly meetings (every other Wednesday at 5:00 PM in Woodburn Hall 120)</li>
+            <li>Volunteer for our community outreach programs</li>
+            <li>Participate in our mentorship program</li>
+            <li>Join our mailing list for updates on events and opportunities</li>
+        </ul>
+        <a href="#" class="cta-button">Join Women in Economics</a>
+        
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:womeninecon@iu.edu">womeninecon@iu.edu</a></p>
+        <p>Phone: (812) 555-1234</p>
+        <p>Follow us on:</p>
+        <ul>
+            <li>Twitter: @IUWomenInEcon</li>
+            <li>Instagram: @iuwomenineconomics</li>
+            <li>LinkedIn: IU Women in Economics Group</li>
+        </ul>
     </main>
     
     <footer>
