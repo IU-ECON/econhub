@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IU Economics - Awards</title>
     <link rel="stylesheet" href="simple-v1.css">
+    <style>
+        .year-section {
+            margin-bottom: 2rem;
+        }
+        .year-toggle {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        .year-content {
+            display: none;
+            padding: 1rem;
+            border: 1px solid #ddd;
+        }
+        .award {
+            margin-bottom: 2rem;
+        }
+        .award h3 {
+            color: #900;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <img src="logo.jpg" alt="IU Economics Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="awards.html" class="current">Awards</a>
@@ -17,24 +39,61 @@
     </header>
     
     <main>
-        <h1>Awards</h1>
-        <p>Undergraduate awards and activities possible due to the support of our alumni and donors</p>
+        <h1>Awards and Honors</h1>
+        <p>Thanks to the generosity of our donors and alumni, we are proud to recognize the outstanding achievements of our Economics students.</p>
         
-        <div class="award">
-            <img src="placeholder-avatar.jpg" alt="Jane Doe" class="avatar">
-            <h2>Jane Doe</h2>
-            <ul>
-                <li>Outstanding Economics Research (2023)</li>
-                <li>Dean's List (2022)</li>
-            </ul>
-            <a href="#" class="button">More Information</a>
+        <div class="year-section">
+            <h2 class="year-toggle">2023-2024 Awards</h2>
+            <div class="year-content">
+                <h3>Majors elected to Phi Beta Kappa, 2023-2024</h3>
+                <h4>Elected in Fall 2023:</h4>
+                <ul>
+                    <li>Corey Wilson Jones</li>
+                    <li>Gillian Johnstone Begg</li>
+                    <li>Jakob Benjamin Hebebrand</li>
+                    <li>Jennifer Ella Blitchok</li>
+                    <li>Nash Howell Devenport</li>
+                </ul>
+                
+                <div class="award">
+                    <h3>Arlington W. Williams Scholarship</h3>
+                    <p>This scholarship is named in honor of Arlie Williams, a long time member of the Economics faculty, who excelled as both researcher and teacher, while also providing the department and its students with invaluable service in his role as Director of Undergraduate Studies for almost 20 years.</p>
+                    <p><strong>Award Winner:</strong> Jessica Ousterhout</p>
+                </div>
+                
+                <div class="award">
+                    <h3>Carroll Christenson Award</h3>
+                    <p>This prize goes to an outstanding junior or senior economics major who has demonstrated an ability to master the technical content of modern economics, intellectual interest of a wide scope, inclination and ability to devote skills to the study of social problems and issues that extend into the broader ranges of social science.</p>
+                    <p><strong>Award Winner:</strong> Amangul Hydyrova</p>
+                </div>
+                
+                <!-- Add more awards here -->
+                
+            </div>
         </div>
         
-        <!-- Add more award entries as needed -->
+        <div class="year-section">
+            <h2 class="year-toggle">2022-2023 Awards</h2>
+            <div class="year-content">
+                <!-- Add content for 2022-2023 awards -->
+            </div>
+        </div>
+        
+        <!-- Add more year sections as needed -->
+        
     </main>
     
     <footer>
         <p>© 2024 Indiana University Economics Department. All rights reserved.</p>
     </footer>
+    
+    <script>
+        document.querySelectorAll('.year-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
