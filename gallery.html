@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IU Economics - Event Gallery</title>
+    <link rel="stylesheet" href="simple-v1.css">
+    <style>
+        .logo {
+            width: 1cm;
+            height: 1cm;
+            object-fit: contain;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="IU Economics Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="awards.html">Awards</a>
+            <a href="women-in-econ.html">Women in Econ</a>
+            <a href="econ-club.html">Econ Club</a>
+            <a href="gallery.html" class="current">Gallery</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Event Photo Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="photos/econ_symposium_2023.jpg" alt="Economics Symposium 2023" onclick="openModal(this.src, 'Economics Symposium 2023')">
+                <p>Economics Symposium 2023</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photos/women_in_econ_panel_2024.jpg" alt="Women in Economics Panel 2024" onclick="openModal(this.src, 'Women in Economics Panel 2024')">
+                <p>Women in Economics Panel 2024</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photos/graduation_ceremony_2023.jpg" alt="Graduation Ceremony 2023" onclick="openModal(this.src, 'Graduation Ceremony 2023')">
+                <p>Graduation Ceremony 2023</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photos/research_showcase_2024.jpg" alt="Student Research Showcase 2024" onclick="openModal(this.src, 'Student Research Showcase 2024')">
+                <p>Student Research Showcase 2024</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photos/alumni_networking_2023.jpg" alt="Alumni Networking Event 2023" onclick="openModal(this.src, 'Alumni Networking Event 2023')">
+                <p>Alumni Networking Event 2023</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photos/econ_club_meeting_2024.jpg" alt="Economics Club Meeting 2024" onclick="openModal(this.src, 'Economics Club Meeting 2024')">
+                <p>Economics Club Meeting 2024</p>
+            </div>
+        </div>
+    </main>
+    
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 Indiana University Economics Department. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(src, caption) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImg");
+            var captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = src;
+            captionText.innerHTML = caption;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
